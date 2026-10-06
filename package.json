@@ -1,0 +1,19 @@
+{
+  "name": "minesweeper-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "deterministic minesweeper backend (TypeScript + Node.js + SQLite)",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/engine.test.js",
+    "start": "npm run build && node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "npm run build && node dist/src/demo.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}
+
